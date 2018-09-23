@@ -14,10 +14,16 @@ class App extends Component {
 		})
 	};
 
+
+
 	render() {
+		const style = {
+			color: '#eee',
+			backgroundColor: 'black'
+		};
 		return (
 			<div className="App">
-				<h1>Welcome to React!</h1>
+				<h1 style={style}>Welcome to React!</h1>
 				<UserInput userName={this.state.username} changed={this.switchNameHandler}/>
 				<UserOutput userName={this.state.username}/>
 			</div>
